@@ -1,0 +1,20 @@
+.tabs {
+  display: flex;
+  gap: 0.75rem;
+  border-bottom: 1px solid var(--gray-400);
+}
+
+.tab {
+  font: var(--font-md);
+  font-weight: 700;
+  line-height: 150%;
+  color: var(--gray-400);
+  padding: 0 0.25rem 0.75rem;
+  transition: color 0.2s ease-in-out;
+}
+
+.active {
+  color: var(--primary-color);
+  padding: 0 0.25rem calc(0.75rem - 4px);
+  border-bottom: 4px solid var(--primary-color);
+}
