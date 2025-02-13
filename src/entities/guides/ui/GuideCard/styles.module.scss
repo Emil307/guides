@@ -1,0 +1,53 @@
+.container {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.img {
+  min-width: 168px;
+  max-width: 168px;
+  min-height: 98px;
+  max-height: 98px;
+  border-radius: 0.75rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.top {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.title {
+  font-weight: 400;
+  max-width: calc(100% - 0.25rem - 20px);
+}
+
+.author {
+  font: var(--font-sm);
+  color: var(--main-blue);
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.time {
+  font: var(--font-sm);
+  color: var(--secondary-color);
+}
+
+.priceWrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+}
+
+.price {
+  font-weight: 500;
+}

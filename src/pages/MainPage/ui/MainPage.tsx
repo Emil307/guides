@@ -1,6 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { Tabs, TTab } from "shared/ui";
+import { Guides } from "widgets/Guides";
 
 const MainPage: React.FC = () => {
   const { t } = useTranslation("main");
@@ -31,6 +32,7 @@ const MainPage: React.FC = () => {
   return (
     <div>
       <Tabs tabs={tabs} />
+      <Guides />
     </div>
   );
 };
