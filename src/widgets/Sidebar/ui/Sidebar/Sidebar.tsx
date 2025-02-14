@@ -15,7 +15,7 @@ interface SidebarProps {
 }
 
 export const Sidebar: React.FC<SidebarProps> = observer(({ className }) => {
-  const { t } = useTranslation("translation");
+  const { t } = useTranslation("profile");
   const { theme } = useTheme();
 
   return (
@@ -32,7 +32,7 @@ export const Sidebar: React.FC<SidebarProps> = observer(({ className }) => {
         })}
       >
         <div className={styles.top}>
-          <h2 className={styles.title}>Настройки</h2>
+          <h2 className={styles.title}>{t("Settings")}</h2>
           <button onClick={() => sidebarState.setIsCollapsed(true)}>
             <CloseIcon />
           </button>
@@ -41,21 +41,21 @@ export const Sidebar: React.FC<SidebarProps> = observer(({ className }) => {
           <div className={styles.langWrapper}>
             <span className={styles.lang}>
               <LanguageIcon />
-              Язык
+              {t("Language")}
             </span>
             <ChangeLanguage />
           </div>
           <div className={styles.themeWrapper}>
             <span className={styles.theme}>
-              {theme === "dark" && <>Темная тема</>}
-              {theme === "light" && <>Светлая тема</>}
+              {theme === "dark" && <>{t("Dark theme")}</>}
+              {theme === "light" && <>{t("Light theme")}</>}
             </span>
             <ToggleTheme />
           </div>
         </div>
         <div className={styles.credits}>
-          <p>Политика конфиденциальности</p>
-          <p>Все права защищены</p>
+          <p>{t("Privacy Policy")}</p>
+          <p>{t("All rights reserved")}</p>
         </div>
       </div>
     </div>
