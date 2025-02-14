@@ -1,5 +1,6 @@
 import React from "react";
 import { Balance } from "widgets/Balance";
+import { MyGuides } from "widgets/MyGuides";
 import { ProfileInfo } from "widgets/ProfileInfo";
 import { Sidebar } from "widgets/Sidebar";
 
@@ -8,6 +9,7 @@ const ProfilePage: React.FC = () => {
     <div>
       <Balance />
       <ProfileInfo />
+      <MyGuides />
       <Sidebar />
     </div>
   );
