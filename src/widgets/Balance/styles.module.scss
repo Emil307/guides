@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--gray);
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.balanceContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.balanceTitle {
+  font: var(--font-xl);
+  font-weight: 700;
+}
+
+.balanceWrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+}
+
+.balance {
+  font: var(--font-lg);
+  font-weight: 700;
+}
