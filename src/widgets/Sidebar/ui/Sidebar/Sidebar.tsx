@@ -22,6 +22,7 @@ export const Sidebar: React.FC<SidebarProps> = observer(({ className }) => {
       })}
     >
       <div
+        onClick={(e) => e.stopPropagation()}
         className={clsx(styles.content, {
           [styles["content-collapsed"]]: sidebarState.isCollapsed,
         })}
