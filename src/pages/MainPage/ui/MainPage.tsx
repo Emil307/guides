@@ -2,6 +2,7 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import { Tabs, TTab } from "shared/ui";
 import { Guides } from "widgets/Guides";
+import styles from "./styles.module.scss";
 
 const MainPage: React.FC = () => {
   const { t } = useTranslation("main");
@@ -30,8 +31,10 @@ const MainPage: React.FC = () => {
   ];
 
   return (
-    <div>
-      <Tabs tabs={tabs} />
+    <div className={styles.page}>
+      <div className={styles.tabsWrapper}>
+        <Tabs tabs={tabs} />
+      </div>
       <Guides />
     </div>
   );

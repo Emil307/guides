@@ -6,6 +6,7 @@ import SettingsWhiteIcon from "shared/assets/icons/settings-white.svg";
 import SettingsBlackIcon from "shared/assets/icons/settings-black.svg";
 import { useTheme } from "shared/config";
 import sidebarState from "widgets/Sidebar/store/sidebarState";
+import { Button } from "@mantine/core";
 
 interface BalanceProps {
   className?: string;
@@ -14,7 +15,7 @@ interface BalanceProps {
 export const Balance: React.FC<BalanceProps> = ({ className }) => {
   const { theme } = useTheme();
   return (
-    <div className={clsx(styles.balance, className)}>
+    <div className={styles.container}>
       <div className={styles.top}>
         <div className={styles.balanceContainer}>
           <h2 className={styles.balanceTitle}>Баланс</h2>
@@ -28,7 +29,19 @@ export const Balance: React.FC<BalanceProps> = ({ className }) => {
           {theme === "light" && <SettingsBlackIcon />}
         </button>
       </div>
-      <div className={styles.bottom}></div>
+      <div className={styles.bottom}>
+        <Button>Подключить кошелек</Button>
+        <Button
+          styles={() => ({
+            root: {
+              backgroundColor: theme === "dark" ? "#fff" : "#000",
+              color: theme === "dark" ? "#000" : "#fff",
+            },
+          })}
+        >
+          Вывести средства
+        </Button>
+      </div>
     </div>
   );
 };
