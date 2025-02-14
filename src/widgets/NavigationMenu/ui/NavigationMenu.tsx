@@ -33,7 +33,7 @@ export const NavigationMenu: React.FC<NavigationMenuProps> = ({
         {theme === "dark" && <CreateWhiteIcon height={24} />}
         {t("Create")}
       </Link>
-      <Link to="/profile" className={styles.link}>
+      <Link to="/profile/me" className={styles.link}>
         {theme === "light" && <ProfileBlackIcon height={24} />}
         {theme === "dark" && <ProfileWhiteIcon height={24} />}
         {t("Profile")}
