@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  border-bottom: 1px solid var(--gray-400);
+}
+
+.avatar {
+  min-width: 6rem;
+  max-width: 6rem;
+  min-height: 6rem;
+  max-height: 6rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.name {
+  font: var(--font-lg);
+  font-weight: 400;
+}
+
+.desc {
+  font: var(--font-md);
+  color: var(--gray-400);
+}
+
+.link {
+  color: var(--main-blue);
+}
