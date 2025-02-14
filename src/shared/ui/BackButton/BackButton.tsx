@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./styles.module.scss";
 import ArrowWhiteIcon from "shared/assets/icons/arrow-white.svg";
-import ArrowBlackIcon from "shared/assets/icons/arrow-white.svg";
+import ArrowBlackIcon from "shared/assets/icons/arrow-black.svg";
 import { useTheme } from "shared/config";
 import { useNavigate } from "react-router-dom";
 
