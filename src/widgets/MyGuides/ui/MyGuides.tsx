@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./styles.module.scss";
 import { GuidesList } from "entities/guides";
+import { useTranslation } from "react-i18next";
 
 const guides = [
   {
@@ -34,9 +35,11 @@ const guides = [
 ];
 
 export const MyGuides: React.FC = () => {
+  const { t } = useTranslation("profile");
+
   return (
     <div className={styles.container}>
-      <h2 className={styles.title}>Мои гайды</h2>
+      <h2 className={styles.title}>{t("My guides")}</h2>
       <GuidesList guides={guides} />
     </div>
   );

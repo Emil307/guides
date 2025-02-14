@@ -1,9 +1,14 @@
 {
-  "Profile page": "Страница профиля",
+  "Profile": "Профиль",
   "Settings": "Настройки",
   "Language": "Язык",
   "Dark theme": "Темная тема",
   "Light theme": "Светлая тема",
   "Privacy Policy": "Политика конфиденциальности",
-  "All rights reserved": "Все права защищены"
+  "All rights reserved": "Все права защищены",
+  "Balance": "Баланс",
+  "Connect wallet": "Подключить кошелек",
+  "Withdraw funds": "Вывести средства",
+  "My guides": "Мои гайды",
+  "Author guides": "Гайды автора"
 }

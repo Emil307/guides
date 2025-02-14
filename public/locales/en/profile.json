@@ -1,9 +1,14 @@
 {
-  "Profile page": "Profile page",
+  "Profile": "Profile",
   "Settings": "Settings",
   "Language": "Language",
   "Dark theme": "Dark theme",
   "Light theme": "Light theme",
   "Privacy Policy": "Privacy Policy",
-  "All rights reserved": "All rights reserved"
+  "All rights reserved": "All rights reserved",
+  "Balance": "Balance",
+  "Connect wallet": "Connect wallet",
+  "Withdraw funds": "Withdraw funds",
+  "My guides": "My guides",
+  "Author guides": "Author's guides"
 }

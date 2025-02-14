@@ -1,24 +1,22 @@
 import React from "react";
 import styles from "./styles.module.scss";
-import clsx from "clsx";
 import StarIcon from "shared/assets/icons/star.svg";
 import SettingsWhiteIcon from "shared/assets/icons/settings-white.svg";
 import SettingsBlackIcon from "shared/assets/icons/settings-black.svg";
 import { useTheme } from "shared/config";
 import sidebarState from "widgets/Sidebar/store/sidebarState";
 import { Button } from "@mantine/core";
+import { useTranslation } from "react-i18next";
 
-interface BalanceProps {
-  className?: string;
-}
-
-export const Balance: React.FC<BalanceProps> = ({ className }) => {
+export const Balance: React.FC = () => {
   const { theme } = useTheme();
+  const { t } = useTranslation("profile");
+
   return (
     <div className={styles.container}>
       <div className={styles.top}>
         <div className={styles.balanceContainer}>
-          <h2 className={styles.balanceTitle}>Баланс</h2>
+          <h2 className={styles.balanceTitle}>{t("Balance")}</h2>
           <div className={styles.balanceWrapper}>
             <StarIcon />
             <p className={styles.balance}>1500</p>
@@ -30,7 +28,7 @@ export const Balance: React.FC<BalanceProps> = ({ className }) => {
         </button>
       </div>
       <div className={styles.bottom}>
-        <Button>Подключить кошелек</Button>
+        <Button>{t("Connect wallet")}</Button>
         <Button
           styles={() => ({
             root: {
@@ -39,7 +37,7 @@ export const Balance: React.FC<BalanceProps> = ({ className }) => {
             },
           })}
         >
-          Вывести средства
+          {t("Withdraw funds")}
         </Button>
       </div>
     </div>
