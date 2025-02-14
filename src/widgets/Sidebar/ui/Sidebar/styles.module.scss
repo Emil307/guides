@@ -18,15 +18,69 @@
 .content {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   width: 300px;
   height: 100%;
-  padding: 1.25rem 0.5rem;
   background-color: var(--dark-gray);
-  transition: width 0.2s;
+  transition: all 0.2s;
 }
 
 .content-collapsed {
   width: 0;
   padding: 0;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5rem 1.25rem 1.25rem;
+  border-bottom: 1px solid var(--gray);
+}
+
+.title {
+  font: var(--font-xl);
+  font-weight: 700;
+  color: var(--white);
+}
+
+.settings {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1.25rem;
+  border-bottom: 1px solid var(--gray);
+}
+
+.langWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.lang {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: var(--gray-400);
+}
+
+.themeWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.theme {
+  color: var(--gray-400);
+}
+
+.credits {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding: 1.25rem;
+}
+
+.credits p {
+  color: var(--gray-400);
 }
