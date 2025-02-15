@@ -1,12 +1,9 @@
 import React from "react";
 import styles from "./styles.module.scss";
+import { useTranslation } from "react-i18next";
 
-interface EditProfileFormProps {
-  className?: string;
-}
+export const EditProfileForm: React.FC = () => {
+  const { t } = useTranslation("editProfile");
 
-export const EditProfileForm: React.FC<EditProfileFormProps> = ({
-  className,
-}) => {
   return <div className={styles.container}>form</div>;
 };
