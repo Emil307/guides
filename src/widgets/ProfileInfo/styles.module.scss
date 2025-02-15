@@ -21,6 +21,11 @@
   gap: 0.25rem;
 }
 
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+
 .name {
   font: var(--font-lg);
   font-weight: 400;

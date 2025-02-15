@@ -1,5 +1,7 @@
 import React from "react";
 import styles from "./styles.module.scss";
+import EditIcon from "shared/assets/icons/edit.svg";
+import { Link } from "react-router-dom";
 
 export const ProfileInfo: React.FC = () => {
   return (
@@ -13,6 +15,9 @@ export const ProfileInfo: React.FC = () => {
       <div className={styles.right}>
         <div className={styles.top}>
           <h2 className={styles.name}>Ксения Гладкова</h2>
+          <Link to="/edit-profile">
+            <EditIcon />
+          </Link>
         </div>
         <p className={styles.desc}>
           Преподаю химию и биологию, сюда пишу свои короткие статьи и гайды
