@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 1rem;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  font: var(--font-lg);
+}
+
+.cancel {
+  color: var(--main-blue);
+}
